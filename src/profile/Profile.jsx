@@ -44,10 +44,17 @@ const Profile = ({ children, fullName, bio, profession, myFunc }) => {
   );
 };
 
+Profile.defaultProps = {
+  fullName: "Ghanem Gahgouh",
+  bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure labore quasi sint eos, ut nemo hic qui facere nisi neque!",
+  profession: "software engineer",
+};
+
 Profile.propTypes = {
   fullName: PropTypes.string.isRequired,
   bio: PropTypes.string.isRequired,
   profession: PropTypes.string.isRequired,
+  myFunc: PropTypes.func.isRequired,
 };
 
 export default Profile;
